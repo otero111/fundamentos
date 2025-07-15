@@ -486,237 +486,735 @@
         // --- Datos del Quiz para Fundamentos de la Psicología ---
         // Contiene las 222 preguntas generadas anteriormente, ordenadas por módulo.
         const questions = [
-            // MÓDULO 1: Definiciones y conceptos introductorios
-            { module: 1, question: "¿Según Bleger, qué implica estudiar la conducta dinámicamente?", answer: "Estudiarla en calidad de proceso y no como \"cosa\", considerando su funcionalidad (resolver tensiones), el conflicto o ambivalencia inherente, el contexto en que ocurre y la tendencia del organismo a la integración." },
-            { module: 1, question: "¿Cuál es la definición etimológica de \"conducta\" según Bleger y qué crítica inicial le hace?", answer: "Proviene del latín y significa \"conducida\" o \"guiada\", implicando que es guiada por la mente, lo que asienta sobre una dicotomía mente-cuerpo." },
-            { module: 1, question: "¿Qué autor describe la psicología como potencialmente \"una filosofía sin rigor, una ética sin exigencia y una medicina sin control\"?", answer: "Georges Canguilhem." },
-            { module: 1, question: "¿Canguilhem analiza el sentido de la psicología desde tres perspectivas históricas, ¿cuáles son?", answer: "La ciencia natural, como ciencia de la subjetividad y como ciencia del comportamiento." },
-            { module: 1, question: "¿Qué función principal le asigna Vezzetti a la historia de la psicología?", answer: "Iluminar críticamente el presente de la disciplina." },
-            { module: 1, question: "¿La Psicología puede definirse según Vezzetti (2007), como:", answer: "Una familia extensa y desorganizada." },
-            { module: 1, question: "¿Vezzetti sostiene que hacia finales del Siglo XIX, la psicología puede ser ordenada en tres tradiciones:", answer: "La psicofísica, el evolucionismo y la psicopatología." },
-            { module: 1, question: "¿Según Sandra Carro (\"Ejes...\"), ¿cuál fue el primer gran tema de la filosofía antes de centrarse en lo humano?", answer: "La naturaleza." },
-            { module: 1, question: "¿Qué autor o corriente filosófica introduce la dimensión de la \"interioridad\" en el estudio del hombre, según Sandra Carro?", answer: "El Cristianismo (a través de San Agustín)." },
-            { module: 1, question: "¿Qué es un paradigma según la definición de Kuhn citada por Carro?", answer: "Lo que prepara al estudiante para formar parte de la comunidad científica en la que trabajará más tarde." },
-            { module: 1, question: "¿En el ámbito de la disciplina psicológica:", answer: "Coexisten numerosas \"corrientes\", \"escuelas\" y \"teorías\"." },
-            { module: 1, question: "¿Según Arana et al., ¿cuál es una característica del \"uso vulgar\" del término psicología?", answer: "Identificarla únicamente con la aplicación de tests o con el tratamiento de trastornos mentales (\"locos\")." },
-            { module: 1, question: "¿Qué distinción clave hacen Arana et al. dentro del uso académico de la psicología?", answer: "La distinción entre psicología básica (investigación) y psicología aplicada (resolución de problemas prácticos)." },
-            { module: 1, question: "¿Para Arana con respecto a la psicología:", answer: "Se puede diferenciar la psicología aplicada y la psicología básica." },
-            { module: 1, question: "¿Arana y colaboradores (2016) consideran que la psicología científica usa como herramientas:", answer: "La observación, la correlación y la investigación experimental." },
-            { module: 1, question: "¿En relación al carácter científico de la Psicología, Arana y colaboradores (2016):", answer: "Se debe eliminar la subjetividad, usando herramientas como la observación, correlación y la investigación experimental." },
-            { module: 1, question: "¿Según el texto de Arana y colaboradores (2016) se destaca en la definición de Psicología que:", answer: "Hay una dificultad en la psicología y es por el uso vulgar del término y por la diversidad de acepciones científicas de la misma." },
-            { module: 1, question: "¿Qué significa la afirmación de Ebbinghaus citada por Russo: \"La Psicología posee un largo pasado pero una historia breve\"?", answer: "Que las preocupaciones sobre lo psicológico son antiguas (filosofía), pero su establecimiento como ciencia formal es reciente (siglo XIX)." },
-            { module: 1, question: "¿Quién fue Carlos Vaz Ferreira y cuál fue su aporte inicial a la psicología en Uruguay según Russo?", answer: "Fue un impulsor de la inclusión de contenidos psicológicos en Filosofía y creó un laboratorio para investigaciones pedagógicas con técnicas de Psicología Experimental." },
-            { module: 1, question: "¿Qué caracteriza la Lectura Crítico Reflexiva (LCR)?", answer: "Ser consciente del contexto de producción del texto y la lectura, integrándolos en el análisis, con ejes en la contextualización, mirada historizante, interdisciplinariedad, complejidad e incertidumbre." },
-            { module: 1, question: "¿Bleger en Psicología de la Conducta (1983), expresa que el ser humano puede ser caracterizado entre otros por:", answer: "Su condición de ser social (porque el medio ambiente es social y se llega a ser por incorporación de experiencias con los demás; también por ser el único que puede pensarse a sí mismo)." },
-            { module: 1, question: "¿Bleger (1983) postula que el ser humano puede ser caracterizado por:", answer: "Su condición de ser concreto, de ser social y de ser histórico; no puede conocerse por pura reflexión (socialmente condicionado); su condición de pertenecer a una naturaleza peculiar: la humana." },
-            { module: 1, question: "¿Bleger, en Psicología de la Conducta (1983), expresa que el ser humano puede ser caracterizado entre otros por:", answer: "Su condición de pertenecer a una naturaleza peculiar, la humana; su condición de ser concreto por pertenecer a una cultura, clase social, grupo étnico, etc.; su condición de ser histórica, tanto en el sentido individual como social." },
-            { module: 1, question: "¿Qué mito critica Bleger al señalar que se estudia al ser humano aislado de las situaciones reales, históricas y presentes?", answer: "El mito del hombre abstracto." },
-            { module: 1, question: "¿Bleger postula, en cuanto al mito del \"hombre aislado\":", answer: "Supone un ser aislado, que con esfuerzo y gradualmente tiene la necesidad de relacionarse con otros." },
-            { module: 1, question: "¿Según José Bleger (1983) si la psicología estudia al hombre, siempre se halla implícita en ella una determinada concepción del mismo. Cuando se refiere al \"mito del hombre natural\" postula que:", answer: "El hombre natural es bueno y tiene cualidades que se pierden o perturban por influencia de la organización social (también que contiene una tradición religiosa)." },
-            { module: 1, question: "¿En relación a la Psicología, J. Bleger postuló:", answer: "Que comparte con otras ciencias el objeto de estudio (el ser humano)." },
-            { module: 1, question: "¿J. Bleger plantea en \"Psicología de la Conducta\" que:", answer: "La Psicología estudia seres humanos reales y concretos." },
-            { module: 1, question: "¿Bleger entiende por conducta:", answer: "Todas las manifestaciones del ser humano, cualesquiera que sean sus características de presentación." },
-            { module: 1, question: "¿Bleger postula la conducta como fenómeno central de la psicología e implica que:", answer: "Es funcional con la finalidad de resolver tensiones." },
-            { module: 1, question: "¿Las áreas de la conducta para Bleger son:", answer: "La mente, el cuerpo y el mundo externo." },
-            { module: 1, question: "¿La pluralidad fenoménica de la conducta para Bleger implica tener en cuenta:", answer: "Las áreas de la conducta (mente, cuerpo, mundo externo)." },
-            { module: 1, question: "¿Cómo define Bleger la \"situación\"?", answer: "El conjunto de elementos, hechos, relaciones y condiciones que constituyen el contexto de la conducta en un momento o período dado." },
-            { module: 1, question: "¿Qué diferencia establece Bleger entre \"campo ambiental o geográfico\" y \"campo psicológico\"?", answer: "El ambiental es el conjunto de elementos objetivos, mientras que el psicológico es la configuración particular que ese campo ambiental tiene para el sujeto en un momento dado, implicado en su conducta." },
-            { module: 1, question: "¿Ante la pregunta acerca de qué es la psicología Canguilhem considera:", answer: "Que una respuesta posible es poner de relieve la unidad del campo disciplinar." },
-            { module: 1, question: "¿Para Georges Canguilhem, al preguntarse qué es la psicología responde que:", answer: "Implica la obligación de esbozar una historia de la psicología en relación con la historia de la filosofía y de la ciencia." },
-            { module: 1, question: "¿G. Canguilhem, en su texto ¿Qué es la Psicología?, plantea la psicología como una ciencia de la subjetividad y como parte de la psicofísica:", answer: "Porque no puede ser menos que una física para ser considerada por los físicos; porque debe buscar en la estructura del cuerpo la razón de los residuos irreales de la experiencia humana; tratará de determinar constantes cuantitativas de la sensación y sus relaciones." },
-            { module: 1, question: "¿Para Vezzetti (2007) la psicología:", answer: "Las disputas de la afiliación ofrecen evidencia de una familia extensa y desorganizada." },
-            { module: 1, question: "¿Arana y otros autores consideran que el objeto de estudio de la psicología es:", answer: "Tiene una pluralidad con relación al objeto (o la actividad del sistema psicológico)." },
-            { module: 1, question: "¿Etimológicamente la palabra \"Psicologia\":", answer: "Se compone de dos afijos (psykhé y logos) que dan por significado el estudio del alma o la mente." },
+    // MÓDULO 1: Definiciones y conceptos introductorios
+    {
+        module: 1,
+        question: "¿Según el texto de Arana y colaboradores (2016) se destaca en la definición de Psicología que:",
+        options: [
+            "Hay una dificultad en definir la psicología y es por el uso vulgar del término y por la diversidad de acepciones científicas de la misma.",
+            "La psicología aplicada es menos confusa que la psicología básica.",
+            "Se podría definir la psicología basándose en el ejercicio de la profesión.",
+            "A través del recorrido histórico, se abandona la distinción entre psicología básica y aplicada."
+        ],
+        answer: "Hay una dificultad en definir la psicología y es por el uso vulgar del término y por la diversidad de acepciones científicas de la misma.",
+        justification: "Arana et al. señalan que la polisemia del término 'psicología' tanto en el lenguaje común como en el académico es una de las principales dificultades para llegar a una definición unificada."
+    },
+    {
+        module: 1,
+        question: "En el ámbito de la disciplina psicológica:",
+        options: [
+            "existe un sólo cuerpo teórico unificado de varias corrientes",
+            "se reconoce sólo un cuerpo coherente y sistematizado de conocimientos sobre la mente",
+            "hay un acuerdo tácito sobre el objeto de estudio",
+            "coexisten numerosas \"corrientes\", \"escuelas\" y \"teorías\""
+        ],
+        answer: "coexisten numerosas \"corrientes\", \"escuelas\" y \"teorías\"",
+        justification: "Autores como Arana y Vezzetti concuerdan en que la psicología se caracteriza por su pluralidad y diversidad, sin un único cuerpo teórico, objeto o método unificado."
+    },
+    {
+        module: 1,
+        question: "En relación a la Psicología, J. Bleger postuló:",
+        options: [
+            "que es una ciencia estática",
+            "que estudia la Psicología desde una mirada interdisciplinaria",
+            "que comparte con otras ciencias el objeto de estudio",
+            "que tiene varios objetos de estudio"
+        ],
+        answer: "que comparte con otras ciencias el objeto de estudio",
+        justification: "Bleger sostiene que la psicología comparte su objeto, el ser humano, con otras ciencias, pero se distingue por su enfoque particular en la organización de la conducta y la personalidad."
+    },
+    {
+        module: 1,
+        question: "Bleger considera que la psicología tiene como objeto de estudio:",
+        options: [
+            "la conducta evidente de las personas",
+            "al hombre solamente en su contexto familiar.",
+            "la descripción y funcionamiento del aparato psíquico (incluye al inconsciente)",
+            "a los seres humanos reales y concretos"
+        ],
+        answer: "a los seres humanos reales y concretos",
+        justification: "Bleger enfatiza que la psicología no debe estudiar entidades abstractas (mente, alma), sino a los seres humanos en su existencia concreta y en su contexto."
+    },
+    {
+        module: 1,
+        question: "Bleger plantea que:",
+        options: [
+            "Se debe plantear la mente o conciencia en el estudio de la psicología",
+            "estudia los seres humanos desde un enfoque particular que responde a la necesidad de atender un determinado plano de organización como seres vivos.",
+            "hay fenómenos parapsicológicos que deben tenerse en cuenta",
+            "la psicología comparte su objeto de estudio con otras ciencias"
+        ],
+        answer: "estudia los seres humanos desde un enfoque particular que responde a la necesidad de atender un determinado plano de organización como seres vivos.",
+        justification: "Bleger argumenta que, aunque comparte el objeto 'hombre' con otras ciencias, la psicología tiene un enfoque específico en un plano de integración particular: la conducta."
+    },
+    {
+        module: 1,
+        question: "Con respecto al mito de \"el hombre natural\" José Bleger (1983) postula que:",
+        options: [
+            "El ser humano se concibe como un ser aislado por naturaleza",
+            "La condición del ser humano es la de ser social",
+            "La condición del ser humano está determinada siempre por una tradición religiosa",
+            "El ser humano tiene cualidades que se perturban por influencia de la organización social"
+        ],
+        answer: "El ser humano tiene cualidades que se perturban por influencia de la organización social",
+        justification: "El mito del hombre natural, según Bleger, postula una esencia originaria y buena del ser humano que se corrompe o distorsiona por la influencia de la civilización."
+    },
+    {
+        module: 1,
+        question: "Las áreas de la conducta para Bleger son:",
+        options: [
+            "La voluntad, el pensamiento y la memoria",
+            "La mente, los reflejos y la acción.",
+            "La mente, el cuerpo y el mundo externo.",
+            "Lo inconsciente, lo consciente y lo preconsciente."
+        ],
+        answer: "La mente, el cuerpo y el mundo externo.",
+        justification: "Bleger representa la conducta en tres áreas concéntricas: 1) la mente (fenómenos simbólicos), 2) el cuerpo (fenómenos concretos corporales) y 3) el mundo externo (actuación)."
+    },
+    {
+        module: 1,
+        question: "Bleger postula la conducta como fenómeno central de la psicología e implica que:",
+        options: [
+            "Se puede comprender independientemente del contexto.",
+            "Es funcional con la finalidad de resolver tensiones.",
+            "No debe generar conflicto o ambivalencia en los sujetos.",
+            "Se estudia como un momento estático de un sujeto."
+        ],
+        answer: "Es funcional con la finalidad de resolver tensiones.",
+        justification: "Siguiendo a Mowrer y Kluckhohn, Bleger afirma que toda conducta es funcional, es decir, tiene el propósito de resolver las tensiones que amenazan la unidad y el equilibrio del organismo."
+    },
+    {
+        module: 1,
+        question: "Arana y colaboradores (2016) consideran que la psicología científica usa como herramientas:",
+        options: [
+            "Las entrevistas abiertas de modo de lograr conocer a los sujetos en \"su medio\"",
+            "La formulación de hipótesis y la contrastación con criterios aceptados del campo de las ciencias sociales.",
+            "El método hipotético-deductivo acompañado de leyes del Comportamiento.",
+            "La observación, la correlación y la investigación experimental."
+        ],
+        answer: "La observación, la correlación y la investigación experimental.",
+        justification: "Los autores señalan que para alcanzar un conocimiento sistemático y romper con la subjetividad, la psicología científica se apoya en estas herramientas metodológicas."
+    },
+    {
+        module: 1,
+        question: "Según Vezzetti (2007) en el siglo XIX se reconocen 3 tradiciones:",
+        options: [
+            "Psicofísica, Psicología experimental y Evolucionista",
+            "Psicofísica, Evolucionista y Psicopatología",
+            "Psicología Comparada, Evolutiva e Humanista",
+            "Psicopatología, Psicología clínica, y psicoterapias"
+        ],
+        answer: "Psicofísica, Evolucionista y Psicopatología",
+        justification: "Vezzetti organiza la diversidad de los comienzos de la psicología en estas tres grandes tradiciones que sentaron las bases para diferentes desarrollos posteriores."
+    },
+    {
+        module: 1,
+        question: "Para Vezzetti (2007) el campo psicológico se caracteriza por:",
+        options: [
+            "Un campo homogéneo con un único objeto de estudio.",
+            "Una pluralidad de objetos de estudio.",
+            "El nacimiento como una práctica de la psicología básica.",
+            "Todas son correctas."
+        ],
+        answer: "Una pluralidad de objetos de estudio.",
+        justification: "Vezzetti enfatiza la heterogeneidad y la falta de unificación del campo psicológico, que se extiende entre la filosofía, la biología y las ciencias sociales."
+    },
+    {
+        module: 1,
+        question: "Para Georges Canguilhem, al preguntarse qué es la psicología responde que:",
+        options: [
+            "Que su origen se encuentra en la llamada psicología moderna.",
+            "Busca la independencia de la psicología de los sistemas filosóficos.",
+            "Se debe buscar las raíces solo en la psicología experimental.",
+            "Implica la obligación de esbozar una historia de la psicología en relación con la historia de la filosofía y de la ciencia."
+        ],
+        answer: "Implica la obligación de esbozar una historia de la psicología en relación con la historia de la filosofía y de la ciencia.",
+        justification: "Canguilhem sostiene que no se puede definir la psicología sin entender su historia y sus complejas relaciones con otras disciplinas que le dieron origen y sentido."
+    },
+    {
+        module: 1,
+        question: "Para Arana con respecto a la psicología:",
+        options: [
+            "Sostiene cómo válida únicamente la psicología aplicada.",
+            "Se puede diferenciar la psicología aplicada y la psicología básica.",
+            "Sostiene una diversidad de escuelas en psicologías, de objetos de estudio y un método único",
+            "Plantea un modelo de psicología unificada"
+        ],
+        answer: "Se puede diferenciar la psicología aplicada y la psicología básica.",
+        justification: "Arana et al. explican que en el ámbito académico es común esta distinción, donde la básica se enfoca en la investigación y la aplicada en la solución de problemas, aunque los límites son difusos."
+    },
+    {
+        module: 1,
+        question: "Bleger (1977) establece como unidad de estudio de la psicología a la conducta y toma las proposiciones de la teoría de la dinámica de la personalidad de Mowrer y Kluckhohn y plantean que:",
+        options: [
+            "La conducta no implica un conflicto, sino que reacciona ante estímulos",
+            "La conducta debe ser estudiada en situaciones experimentales",
+            "La conducta debe dejar de lado el contexto para ser estudiada",
+            "La conducta es funcional, tiende a resolver tensiones"
+        ],
+        answer: "La conducta es funcional, tiende a resolver tensiones",
+        justification: "Este es uno de los cuatro postulados que Bleger adopta, indicando que la conducta siempre tiene una finalidad, que es la de mantener el equilibrio del organismo."
+    },
+    {
+        module: 1,
+        question: "¿Cuál de las siguientes expresiones pertenece a José Bleger (1977)?",
+        options: [
+            "Se estudia la conducta en calidad de \"cosa\", en forma estática.",
+            "En la historia de la psicología, en todos los campos psicológicos se ha estado estudiando únicamente la mente como objeto de estudio.",
+            "El estudio de la conducta se hace en función de la personalidad y del inseparable contexto social, del cual el ser humano es integrante",
+            "La psicología es exclusivamente la ciencia de los fenómenos mentales."
+        ],
+        answer: "El estudio de la conducta se hace en función de la personalidad y del inseparable contexto social, del cual el ser humano es integrante",
+        justification: "Esta afirmación resume la perspectiva de Bleger, que integra al individuo en su contexto y ve la conducta como una manifestación de la personalidad en situación."
+    },
 
-            // MÓDULO 2: Antecedentes filosóficos
-            { module: 2, question: "¿En el pensamiento antiguo, qué filósofo es considerado el iniciador del racionalismo y del dualismo alma-cuerpo?", answer: "Sócrates." },
-            { module: 2, question: "¿El filósofo griego Sócrates postula que:", answer: "La ignorancia de no conocerse a sí mismo conduce al mal." },
-            { module: 2, question: "¿Sócrates afirma que:", answer: "La ignorancia de no conocerse a sí mismo, conduce al \"mal\"." },
-            { module: 2, question: "¿Cuál es la diferencia fundamental entre Platón y Aristóteles respecto al origen del conocimiento?", answer: "Platón es racionalista (el conocimiento proviene de las ideas innatas/razón), mientras que Aristóteles es empirista (el conocimiento proviene de la observación/experiencia)." },
-            { module: 2, question: "¿Para Platón:", answer: "La razón es la mejor de las potencialidades humanas." },
-            { module: 2, question: "¿Según Platón:", answer: "El mundo estaba dividido por el espíritu y la materia." },
-            { module: 2, question: "¿Para Platón acerca del problema Alma-Cuerpo:", answer: "Están unidas de manera accidental como un conductor (alma) a su vehículo (cuerpo)." },
-            { module: 2, question: "¿En la Antigüedad:", answer: "La preocupación por las relaciones alma-cuerpo, surge con los filósofos griegos." },
-            { module: 2, question: "¿Los planteos de Aristóteles frente al conocimiento son:", answer: "Jerarquiza la observación como un método de conocimiento." },
-            { module: 2, question: "¿Según Aristóteles:", answer: "Las ideas son inseparables de la cosa misma (materia y forma)." },
-            { module: 2, question: "¿Aristóteles consideraba que la memoria:", answer: "Funciona por el mecanismo de asociación (semejanza y contigüidad)." },
-            { module: 2, question: "¿Qué médico de la antigüedad es conocido por su teoría de los cuatro humores y por buscar causas naturales a las enfermedades?", answer: "Hipócrates." },
-            { module: 2, question: "¿Hipócrates (siglo V A.C) consideraba fundamental:", answer: "El equilibrio de los humores para lograr la salud." },
-            { module: 2, question: "¿Respecto a la atención de los enfermos, Hipócrates (Siglo V A.C) consideraba fundamental:", answer: "Realizar una anamnesis profunda del paciente para entender la enfermedad." },
-            { module: 2, question: "¿Los griegos en la antigüedad:", answer: "Hipócrates es considerado uno de los médicos de la antigüedad que buscó causas naturales y no religiosas a las enfermedades." },
-            { module: 2, question: "¿La idea de salud y enfermedad en la Antigüedad:", answer: "Hipócrates desarrolla la teoría de los humores." },
-            { module: 2, question: "¿Qué filósofo medieval retomó las ideas de Platón (neoplatonismo) enfatizando la relación entre fe y razón?", answer: "San Agustín." },
-            { module: 2, question: "¿San Agustín:", answer: "Propone que las personas tienen \"libre albedrío\" para tomar sus decisiones." },
-            { module: 2, question: "¿Qué filósofo medieval se apoyó en Aristóteles e intentó comprender la revelación cristiana usando la razón (escolástica)?", answer: "Santo Tomás de Aquino." },
-            { module: 2, question: "¿Sobre la Escolástica:", answer: "La escolástica propuesta por Santo Tomás utiliza la razón y la filosofía de Aristóteles, para comprender el contenido sobrenatural de la revelación cristiana." },
-            { module: 2, question: "¿Sobre el conocimiento y la ciencia en la Edad Media:", answer: "Durante el medioevo la producción científica se basaba en la fe religiosa." },
-            { module: 2, question: "¿Sobre la enfermedad en la Edad Media:", answer: "En la Edad Media se concibe a la salud de acuerdo a las ideas hipocráticas del equilibrio de los humores." },
-            { module: 2, question: "¿En la Edad Media la Medicina:", answer: "Reconocía causas ambientales, traumáticas y mágico religiosas en las enfermedades." },
-            { module: 2, question: "¿En la Edad Media:", answer: "Se asimila el pecado a la enfermedad mental." },
-            { module: 2, question: "¿En la Edad Media:", answer: "El pensamiento medieval define que el origen divino rige por igual el mundo social, la naturaleza y el espíritu científico." },
-            { module: 2, question: "¿Cuál es la esencia del método cartesiano según el resumen?", answer: "La duda metódica, el análisis (dividir problemas en partes simples) y la síntesis ordenada (de lo simple a lo complejo) para llegar a verdades evidentes (\"Cogito ergo sum\")." },
-            { module: 2, question: "¿El método de Descartes:", answer: "Concluye que se debe analizar la realidad en sus partes más elementales." },
-            { module: 2, question: "¿René Descartes:", answer: "Consideraba que el universo material era una máquina." },
-            { module: 2, question: "¿Descartes:", answer: "Descartes consideraba que el universo material era una máquina." },
-            { module: 2, question: "¿Qué dos sustancias distintas postula Descartes en su dualismo?", answer: "La sustancia extensa (res extensa - materia/cuerpo) y la sustancia pensante (res cogitans - alma/mente)." },
-            { module: 2, question: "¿Descartes plantea una distinción entre mente y cuerpo y destaca que:", answer: "El cuerpo tiene propiedades físicas como la extensión y el peso y la mente carece de tales propiedades." },
-            { module: 2, question: "¿El dualismo de la sustancia material y espiritual:", answer: "Se puede ubicar en la Antigüedad, en los planteos filosóficos de Sócrates y Platón." },
-            { module: 2, question: "¿Qué filósofo empirista inglés es conocido por su metáfora de la mente como \"tabula rasa\"?", answer: "John Locke." },
-            { module: 2, question: "¿En la Modernidad:", answer: "John Locke diferencia entre ideas simples y compuestas, las últimas resultantes de la asociación de ideas simples." },
-            { module: 2, question: "¿Francis Bacon:", answer: "Fue un empirista inglés, que sostuvo la utilización método inductivo para alcanzar la confiabilidad científica." },
-            { module: 2, question: "¿Qué problema señaló David Hume respecto al conocimiento obtenido por inducción?", answer: "Que la observación pasada de fenómenos consecutivos no garantiza que la relación causal se mantenga en el futuro (problema de la inducción)." },
-            { module: 2, question: "¿Cómo intentó Kant resolver la dicotomía entre racionalismo y empirismo?", answer: "Afirmando que el conocimiento comienza con la experiencia pero es organizado por estructuras a priori de la mente (espacio, tiempo, categorías)." },
-            { module: 2, question: "¿Según Capra, qué visión del mundo caracterizó a la Edad Media antes de la Revolución Científica?", answer: "Una visión orgánica, viva y espiritual del universo." },
-            { module: 2, question: "¿La revolución científica según Capra:", answer: "Modifica la llamada visión \"orgánica del mundo\" por una \"visión del mundo máquina\"." },
-            { module: 2, question: "¿La revolución científica:", answer: "Considera que el mundo se rige por leyes naturales." },
-            { module: 2, question: "¿Qué dos elementos combinó Galileo Galilei que se consideran fundamentales para la ciencia moderna, según Capra?", answer: "La experimentación científica (enfoque empírico) y el lenguaje matemático para describir la naturaleza." },
-            { module: 2, question: "¿Cuál era el objetivo principal de la ciencia según Francis Bacon, diferenciándose de la meta antigua de \"comprensión\"?", answer: "Obtener un conocimiento que permitiera dominar y controlar la naturaleza." },
-            { module: 2, question: "¿Qué científico completó la \"síntesis newtoniana\" al formular leyes matemáticas universales del movimiento y la gravedad?", answer: "Isaac Newton." },
-            { module: 2, question: "¿En la época moderna se destaca que:", answer: "Newton consideraba al universo como una creación divina." },
-            { module: 2, question: "¿Según García, qué teoría antigua explicaba las enfermedades mentales y físicas por la acción de entidades no materiales o espíritus?", answer: "El animismo (y derivaciones como el chamanismo)." },
-            { module: 2, question: "¿Qué dificultó la investigación anatómica (disección) durante la Edad Media según García?", answer: "La prohibición por parte de la Iglesia, al considerar el cuerpo como templo del espíritu santo." },
-            { module: 2, question: "¿Qué diferencia el modelo médico tradicional del modelo biopsicosocial en la explicación de la salud/enfermedad?", answer: "El modelo médico se centra en causalidades exógenas (patógenos), mientras que el biopsicosocial considera la interacción integral de factores biológicos, psicológicos y sociales." },
-            { module: 2, question: "¿Acerca de los métodos que formula la ciencia en el periodo del Renacimiento:", answer: "La Física como disciplina en el siglo XVII, plantea la comprensión de los fenómenos de la naturaleza cuantificándolos y describiendo leyes." },
-            { module: 2, question: "¿En la Modernidad:", answer: "En la Modernidad comienzan a practicarse las disecciones de los cuerpos, tal como se observa en la obra de Rembrandt, \"La lección de anatomía\"." },
-            { module: 2, question: "¿En la Modernidad:", answer: "Leonardo Da Vinci es un destacado representante del Renacimiento y el Humanismo occidental por sus creaciones e ideas innovadoras." },
-            { module: 2, question: "¿Sobre la enfermedad en la Modernidad:", answer: "En la pintura \"La piedra de la locura\" de El Bosco, puede observarse un período de transición de las creencias supersticiosas de la Edad Media, hacia ideas más causalistas de la enfermedad, durante la modernidad." },
+    // MÓDULO 2: Antecedentes filosóficos de la Psicología
+    {
+        module: 2,
+        question: "En el período antiguo (siglo V a.C), Platón consideraba que el mundo estaba dividido en:",
+        options: [
+            "Materia y espíritu",
+            "Cuerpo y mente",
+            "Razón y emoción",
+            "Cielo y tierra"
+        ],
+        answer: "Materia y espíritu",
+        justification: "Platón postuló un dualismo ontológico entre el mundo sensible (material, aparente) y el mundo de las Ideas (espiritual, verdadero), siendo este último la fuente del conocimiento real."
+    },
+    {
+        module: 2,
+        question: "Según Aristóteles:",
+        options: [
+            "el verdadero ser, la auténtica existencia, se encuentra en lo individual y lo divino.",
+            "las ideas son inseparables de la cosa misma",
+            "la experiencia produce una idea distorsionada en el conocimiento",
+            "las ideas previas, o como llama en su tratado de filosofía, \"ideas a priori\", tienen un papel central para conocer"
+        ],
+        answer: "las ideas son inseparables de la cosa misma",
+        justification: "A diferencia de Platón, Aristóteles (hilemorfismo) sostenía que la forma (idea) y la materia son inseparables; no se puede concebir una sin la otra en el mundo real."
+    },
+    {
+        module: 2,
+        question: "Hipócrates es considerado uno de los médicos de la antigüedad que:",
+        options: [
+            "Buscó causas naturales y no religiosas a las enfermedades.",
+            "Realizaba trepanaciones para liberar malos espíritus.",
+            "Basaba sus diagnósticos exclusivamente en la astrología.",
+            "Creía que todas las enfermedades eran castigos divinos."
+        ],
+        answer: "Buscó causas naturales y no religiosas a las enfermedades.",
+        justification: "Hipócrates marcó un punto de inflexión al separar la medicina de la religión y la magia, buscando explicaciones racionales y naturales para las enfermedades, como la teoría de los humores."
+    },
+    {
+        module: 2,
+        question: "En la Edad Media, la concepción de la enfermedad mental estaba fuertemente ligada a:",
+        options: [
+            "El desequilibrio de los neurotransmisores",
+            "Traumas infantiles",
+            "La posesión demoníaca y el pecado",
+            "Factores genéticos hereditarios"
+        ],
+        answer: "La posesión demoníaca y el pecado",
+        justification: "Bajo el dominio teocéntrico, la locura y otras aflicciones mentales eran interpretadas como una manifestación del mal, un castigo divino o la acción de demonios, asimilando la enfermedad al pecado."
+    },
+    {
+        module: 2,
+        question: "Descartes plantea una distinción entre mente y cuerpo y destaca que:",
+        options: [
+            "El alma racional se puede describir en términos humanistas.",
+            "Los cambios en el mundo exterior no afectan las terminaciones nerviosas.",
+            "El cuerpo tiene propiedades físicas como la extensión y el peso y la mente carece de tales propiedades.",
+            "La naturaleza del cuerpo y la mente es la misma."
+        ],
+        answer: "El cuerpo tiene propiedades físicas como la extensión y el peso y la mente carece de tales propiedades.",
+        justification: "El dualismo cartesiano se basa en que la res extensa (cuerpo) es material y se rige por leyes mecánicas, mientras que la res cogitans (mente) es inmaterial y no tiene propiedades físicas."
+    },
+    {
+        module: 2,
+        question: "Descartes consideraba que el universo material era:",
+        options: [
+            "Un organismo vivo y espiritual.",
+            "Una máquina.",
+            "Un caos impredecible.",
+            "Una creación divina en constante cambio."
+        ],
+        answer: "Una máquina.",
+        justification: "La visión mecanicista de Descartes, extendida por Newton, fue fundamental en la Revolución Científica. Concebía el universo material, incluyendo el cuerpo, como un complejo mecanismo de relojería."
+    },
+    {
+        module: 2,
+        question: "Para Platón acerca del problema Alma-Cuerpo:",
+        options: [
+            "El hombre es un compuesto de alma y cuerpo indivisible.",
+            "El alma es material y mortal, y el cuerpo es inmortal e inmaterial.",
+            "Están unidas de manera accidental como un conductor (alma) a su vehículo (cuerpo).",
+            "Alma y cuerpo son parte de una unidad integral."
+        ],
+        answer: "Están unidas de manera accidental como un conductor (alma) a su vehículo (cuerpo).",
+        justification: "Platón utiliza la alegoría del auriga para ilustrar su visión dualista, donde el alma (conductor) es una entidad inmortal y preexistente que está temporalmente 'atrapada' en un cuerpo mortal (vehículo)."
+    },
+    {
+        module: 2,
+        question: "La idea de salud y enfermedad en la Antigüedad:",
+        options: [
+            "Se buscan las causas en los problemas internos del cuerpo.",
+            "Los enfermos mentales eran considerados portadores de un saber universal.",
+            "Hipócrates desarrolla la teoría de los humores.",
+            "La salud mental adquiere relevancia con la idea de posesión demoníaca."
+        ],
+        answer: "Hipócrates desarrolla la teoría de los humores.",
+        justification: "La teoría de los cuatro humores de Hipócrates fue un modelo dominante en la antigüedad para explicar tanto la salud (equilibrio) como la enfermedad (desequilibrio) a partir de causas naturales internas del cuerpo."
+    },
+    {
+        module: 2,
+        question: "Sobre la Escolástica:",
+        options: [
+            "La escolástica proveniente de los griegos, permitió conceptualizar los conceptos de salud y enfermedad.",
+            "En la Edad Media predominó la escolástica que deriva de los planteos de Sócrates sobre el cosmos.",
+            "La escolástica propuesta por Santo Tomás utiliza la razón y la filosofía de Aristóteles, para comprender el contenido sobrenatural de la revelación cristiana.",
+            "En el período medieval la ciencia se expresaba a través de la mayéutica."
+        ],
+        answer: "La escolástica propuesta por Santo Tomás utiliza la razón y la filosofía de Aristóteles, para comprender el contenido sobrenatural de la revelación cristiana.",
+        justification: "La escolástica fue el método filosófico-teológico dominante en la Edad Media tardía, que buscaba reconciliar la fe con la razón, utilizando las herramientas lógicas de Aristóteles para defender y explicar la doctrina cristiana."
+    },
+    {
+        module: 2,
+        question: "En la Modernidad comienzan a practicarse las disecciones de los cuerpos, tal como se observa en la obra de Rembrandt:",
+        options: [
+            "\"La ronda de noche\"",
+            "\"El festín de Baltasar\"",
+            "\"La lección de anatomía\"",
+            "\"La novia judía\""
+        ],
+        answer: "\"La lección de anatomía\"",
+        justification: "Esta famosa pintura de Rembrandt refleja el cambio de mentalidad de la Modernidad, donde el interés por la observación empírica y el conocimiento del cuerpo humano llevó a la práctica de disecciones, antes prohibidas."
+    },
+    {
+        module: 2,
+        question: "Según Capra, la concepción del \"mundo máquina\" es el resultado de:",
+        options: [
+            "Del proceso que se produce por el progresivo desarrollo de la tecnología y las ciencias informáticas",
+            "Los aportes de Hipócrates sobre los Humores.",
+            "Los cambios producidos en la física y la astronomía, con las teorías de Copérnico, Galileo y Newton",
+            "De las formulaciones hechas por la física cuántica."
+        ],
+        answer: "Los cambios producidos en la física y la astronomía, con las teorías de Copérnico, Galileo y Newton",
+        justification: "Capra argumenta que la Revolución Científica, liderada por estas figuras, consolidó una visión mecanicista del universo, viéndolo como un sistema predecible y regido por leyes matemáticas."
+    },
+    {
+        module: 2,
+        question: "La separación entre Filosofía y Psicología se produce:",
+        options: [
+            "Cuando en la Grecia Antigua surge el conocimiento universal.",
+            "Cuando se produce la caída del imperio Romano de occidente.",
+            "Con el surgimiento de la escolástica.",
+            "Cuando surge el modelo científico de las ciencias naturales."
+        ],
+        answer: "Cuando surge el modelo científico de las ciencias naturales.",
+        justification: "La psicología se independiza de la filosofía cuando adopta el método experimental de las ciencias naturales en el siglo XIX, buscando estudiar sus objetos (la conciencia, la conducta) de manera empírica y medible."
+    },
+    {
+        module: 2,
+        question: "La contribución de R. Descartes al surgimiento de la ciencia moderna se reflejó en:",
+        options: [
+            "En el desarrollo del paradigma de la complejidad.",
+            "La geometría analítica como resultado de la relación entre la matemática y la geometría.",
+            "Los desarrollos teóricos tomados de los filósofos empiristas.",
+            "Las ciencias sociales y del comportamiento."
+        ],
+        answer: "La geometría analítica como resultado de la relación entre la matemática y la geometría.",
+        justification: "Descartes fue fundamental al crear la geometría analítica, uniendo álgebra y geometría, lo que proporcionó una herramienta matemática poderosa para describir el espacio y el movimiento, clave para la física de Newton."
+    },
+    {
+        module: 2,
+        question: "En la Antigüedad:",
+        options: [
+            "Se buscaban explicaciones acerca del conocimiento, del origen del cosmos y sobre la importancia del alma humana.",
+            "Se resuelve el dilema alma/cuerpo planteado por Platón y Aristóteles",
+            "Aristóteles plantea que es fundamental la observación clínica de los enfermos",
+            "Tuvieron gran desarrollo los estudios del sistema nervioso."
+        ],
+        answer: "Se buscaban explicaciones acerca del conocimiento, del origen del cosmos y sobre la importancia del alma humana.",
+        justification: "El pensamiento filosófico griego abarcó estas grandes preguntas, pasando de un enfoque cosmológico (presocráticos) a uno antropológico y gnoseológico (Sócrates, Platón, Aristóteles)."
+    },
+    {
+        module: 2,
+        question: "La medicina durante el periodo del medioevo:",
+        options: [
+            "Eliminó la creencia en la existencia de los demonios y su acción directa sobre los seres humanos como causa de las enfermedades.",
+            "privilegiaba en el cuerpo humano los signos físicos de la enfermedad.",
+            "La disección de cadáveres estaba prohibida por las creencias religiosas.",
+            "Avanzó rápidamente en la investigación naturalista del Cuerpo humano y en las causas de las enfermedades."
+        ],
+        answer: "La disección de cadáveres estaba prohibida por las creencias religiosas.",
+        justification: "La concepción sagrada del cuerpo humano en el cristianismo medieval impidió durante siglos la práctica de la disección, limitando el avance del conocimiento anatómico."
+    },
+    
+    // MÓDULO 3: La pluralidad psicológica a partir del siglo XIX
+    {
+        module: 3,
+        question: "La psicología se consideró científica cuando:",
+        options: [
+            "Define su objeto y método de estudio sólo basado en los aportes de la filosofía",
+            "Desarrolla metodologías de investigación que tienen en cuenta el contexto sociohistórico",
+            "Adoptó el método de investigación de las ciencias humanas",
+            "Incorpora el método de investigación, que toma en cuenta los aportes del positivismo y los avances de las ciencias naturales"
+        ],
+        answer: "Incorpora el método de investigación, que toma en cuenta los aportes del positivismo y los avances de las ciencias naturales",
+        justification: "El estatus de ciencia para la psicología se alcanzó en el siglo XIX al adoptar el método experimental, propio de las ciencias naturales y en línea con el positivismo dominante, para estudiar los fenómenos mentales en laboratorio."
+    },
+    {
+        module: 3,
+        question: "El método de la psicología experimental:",
+        options: [
+            "Procuró una técnica cualitativa que exploraba la conciencia y sus aspectos inconscientes de la personalidad.",
+            "Era una técnica de percepción interna controlada de los contenidos de la conciencia realizada bajo condiciones experimentales",
+            "Estudiaba sólo las conductas observables sin importar la conciencia",
+            "Todas las opciones son correctas."
+        ],
+        answer: "Era una técnica de percepción interna controlada de los contenidos de la conciencia realizada bajo condiciones experimentales",
+        justification: "Wundt denominó a su método 'introspección experimental' o 'percepción interna', que consistía en la auto-observación rigurosa y controlada de la experiencia consciente inmediata bajo condiciones de laboratorio."
+    },
+    {
+        module: 3,
+        question: "Para Wundt:",
+        options: [
+            "La voluntad organiza los contenidos mentales en estructuras de nivel superior, de forma que las imágenes de la percepción se reorganizan en procesos superiores cognitivos",
+            "Todas las opciones son correctas.",
+            "La voluntad organiza los contenidos mentales inconscientes reprimidos que estructuran la conducta en procesos emocionales.",
+            "Las conductas observables y reflejas determinan las conductas del sujeto experimentados."
+        ],
+        answer: "La voluntad organiza los contenidos mentales en estructuras de nivel superior, de forma que las imágenes de la percepción se reorganizan en procesos superiores cognitivos",
+        justification: "Wundt llamó a su sistema 'voluntarismo' porque creía que la voluntad era una fuerza activa que organizaba los elementos básicos de la conciencia (sensaciones, sentimientos) en procesos mentales más complejos (apercepción)."
+    },
+    {
+        module: 3,
+        question: "El estructuralismo se desarrolló como escuela psicológica a partir de:",
+        options: [
+            "La importancia que se le da a la intencionalidad de las conductas.",
+            "Los aportes de la psicología cognitiva en Estados Unidos.",
+            "La psicología experimental cuyo objeto de estudio es la conciencia.",
+            "Una concepción psicológica que valoriza el concepto de inconsciente."
+        ],
+        answer: "La psicología experimental cuyo objeto de estudio es la conciencia.",
+        justification: "El estructuralismo de Titchener fue una derivación directa de la psicología de Wundt, llevando a EE.UU. el objetivo de analizar la estructura de la conciencia a través de la introspección experimental."
+    },
+    {
+        module: 3,
+        question: "El funcionalismo que se desarrolla en EE.UU.:",
+        options: [
+            "Está interesado en la morfología de la conciencia.",
+            "Se interesó por la intención de la mente.",
+            "Se ocupa de los procesos psíquicos conscientes e inconscientes.",
+            "Se ocupó de los elementos simples de la conciencia."
+        ],
+        answer: "Se interesó por la intención de la mente.",
+        justification: "El funcionalismo, influido por Darwin, se centró en la utilidad y el propósito ('para qué sirve') de los procesos mentales, es decir, su función adaptativa, en contraste con el estructuralismo que se centraba en el 'qué es'."
+    },
+    {
+        module: 3,
+        question: "El Funcionalismo norteamericano se sustenta en los siguientes referentes teóricos.",
+        options: [
+            "Postula que los conceptos mentales derivan del pragmatismo y el asociacionismo evolucionista.",
+            "Estudios sobre el comportamiento sexual de hombres y mujeres, fueron relevantes para su reconocimiento científico.",
+            "Se basa en el estudio de las emociones y la expresión facial de las mismas.",
+            "Erich Fromm (1900-1980) fue uno de los principales referentes e impulsores de esta teoría."
+        ],
+        answer: "Postula que los conceptos mentales derivan del pragmatismo y el asociacionismo evolucionista.",
+        justification: "El funcionalismo se nutrió de la filosofía pragmática (la verdad de una idea reside en su utilidad) y de la teoría de la evolución de Darwin, que enfatiza la adaptación."
+    },
+    {
+        module: 3,
+        question: "La teoría de la evolución de las especies de Darwin tuvo influencia en:",
+        options: [
+            "La formulación del conductismo y la idea de adaptación de conductas.",
+            "Los trabajos de psicofisiología que dieron lugar a la psicología experimental de finales del siglo XIX.",
+            "Los estudios del inconsciente y de antropología realizados por Freud.",
+            "La psicología evolutiva del desarrollo cognitivo de Piaget."
+        ],
+        answer: "La formulación del conductismo y la idea de adaptación de conductas.",
+        justification: "La idea de adaptación y continuidad entre especies fue fundamental para el funcionalismo y, posteriormente, para el conductismo, que estudió el aprendizaje como forma de adaptación al ambiente."
+    },
+    {
+        module: 3,
+        question: "Se consideran antecedentes de la psicología experimental:",
+        options: [
+            "la descripción morfológica de la biología que se desarrolla en Alemania",
+            "Las investigaciones sobre la Gestalt en Alemania",
+            "Los aportes de la epistemología genética de Piaget",
+            "La psicología que toma al sujeto como un ser holístico"
+        ],
+        answer: "la descripción morfológica de la biología que se desarrolla en Alemania",
+        justification: "La cientifización de la psicología, según Carro, estuvo precedida por los avances en fisiología y neurología en Alemania, que aplicaron métodos experimentales al estudio de los sentidos y los impulsos nerviosos."
+    },
+    {
+        module: 3,
+        question: "La psicología en Latinoamérica en la primera mitad del siglo XX reconoce como hitos destacados:",
+        options: [
+            "Los aportes sobre pedagogía y orientación vocacional realizados por Clemente Estable",
+            "Todas son correctas.",
+            "Las contribuciones de Ángel Garma con los primeros estudios sobre Psicoanálisis en Argentina.",
+            "Horacio Piñero fundador de laboratorios de Psicología Experimental en Buenos Aires."
+        ],
+        answer: "Todas son correctas.",
+        justification: "Estos tres hitos son ejemplos del desarrollo temprano de la psicología en Latinoamérica, mostrando un fuerte interés en la psicología aplicada (pedagogía, psicoanálisis) y la investigación experimental."
+    },
+    {
+        module: 3,
+        question: "El desarrollo de la psicología Latinoamericana se distingue por:",
+        options: [
+            "Una psicología aplicada de utilidad y su relación con otras disciplinas.",
+            "Una psicología positivista que busca cumplir con los ideales de objetividad científica.",
+            "El desarrollo de una Psicología nacionalista y originaria de autores locales.",
+            "Una aplicación directa de las teorías norteamericanas en América."
+        ],
+        answer: "Una psicología aplicada de utilidad y su relación con otras disciplinas.",
+        justification: "Klappenbach y Pavesi señalan que una característica distintiva de la psicología en Latinoamérica fue su orientación pragmática, buscando resolver problemas concretos en áreas como la educación y la salud, y su estrecha relación con estas disciplinas."
+    },
+    {
+        module: 3,
+        question: "La psiquiatría dinámica:",
+        options: [
+            "se toma como uno de los antecedentes del desarrollo de la Psicología Experimental",
+            "es uno de los antecedentes del Humanismo",
+            "realizó aportes conceptuales a la Teoría Gestáltica",
+            "contribuyó al desarrollo de la idea del aparato psíquico freudiano"
+        ],
+        answer: "contribuyó al desarrollo de la idea del aparato psíquico freudiano",
+        justification: "Ellenberger muestra cómo la psiquiatría dinámica, con su interés en las fuerzas y conflictos mentales (especialmente a través de la hipnosis y el estudio de la histeria), fue un antecedente directo del psicoanálisis."
+    },
+    {
+        module: 3,
+        question: "Se consideran antecedentes del psicoanálisis:",
+        options: [
+            "El movimiento del neoromanticismo con el interés por lo oculto.",
+            "El concepto de tabula rasa de John Locke",
+            "La frenología que atribuía cada facultad mental a una zona del cerebro",
+            "Las investigaciones en animales a partir del darwinismo."
+        ],
+        answer: "El movimiento del neoromanticismo con el interés por lo oculto.",
+        justification: "El neoromanticismo de finales del siglo XIX, con su fascinación por lo irracional, los sueños, lo oculto y las profundidades de la mente, creó un clima cultural propicio para las ideas psicoanalíticas."
+    },
+    {
+        module: 3,
+        question: "En el psicoanálisis:",
+        options: [
+            "Freud comienza estudiando los casos de histeria a los cuales los médicos no hallaban causas orgánicas.",
+            "Freud explica su teoría partiendo de los estudios de la introspección.",
+            "Freud plantea la tesis según la cual cada sistema social establece sus principios particulares.",
+            "Freud propone en el comienzo de sus trabajos, utilizar el método dialéctico retomando los aportes de Hume."
+        ],
+        answer: "Freud comienza estudiando los casos de histeria a los cuales los médicos no hallaban causas orgánicas.",
+        justification: "El punto de partida de Freud fue la práctica clínica con pacientes histéricas, cuyos síntomas físicos no tenían una explicación médica, lo que lo llevó a postular la existencia de causas psíquicas inconscientes."
+    },
+    {
+        module: 3,
+        question: "En su primera conferencia del año 1910, Freud explica la doble conciencia como:",
+        options: [
+            "Por un lado un estado anímico consciente y por el otro uno inconsciente.",
+            "A la memoria por un lado y por el otro a la percepción.",
+            "Una escisión de la personalidad.",
+            "Lo que se puede estudiar en condiciones experimentales."
+        ],
+        answer: "Por un lado un estado anímico consciente y por el otro uno inconsciente.",
+        justification: "Freud utiliza el concepto de 'double conscience' de la psicopatología francesa para introducir su idea de que en un mismo individuo coexisten agrupaciones anímicas separadas, una consciente y otra inconsciente."
+    },
+    {
+        module: 3,
+        question: "El magnetismo animal de Mesmer fue un antecedente del psicoanálisis, con el cual:",
+        options: [
+            "se pudo ver que era útil para el tratamiento de las enfermedades mentales",
+            "se pudo ver el valor de la sugestión",
+            "fue el origen sobre la investigación de la hipnosis.",
+            "todas son correctas"
+        ],
+        answer: "todas son correctas",
+        justification: "Aunque su teoría del 'fluido' fue descartada, la práctica de Mesmer fue crucial: demostró que se podían tratar síntomas mentales (valor de la sugestión) y fue el punto de partida para la investigación sistemática de la hipnosis, que a su vez fue un antecedente directo del método de Freud."
+    },
+    
+    // MÓDULO 4: Ámbitos de la psicología
+    {
+        module: 4,
+        question: "La psicología de la Gestalt surge en Europa en los principios del siglo XX:",
+        options: [
+            "Utiliza el método observacional que en psicología recibe el nombre de \"introspectivo\".",
+            "Surge como una reacción frente al elementarismo y atomismo del Estructuralismo.",
+            "Los conceptos propuestos por Edward Bradford Titchener (1867-1927), son los antecedentes más cercanos a la Psicología de la Gestalt.",
+            "La misma surge en base a los antecedentes directos de los fisiólogos y las mediciones intelectuales."
+        ],
+        answer: "Surge como una reacción frente al elementarismo y atomismo del Estructuralismo.",
+        justification: "La Gestalt se opuso radicalmente a la idea de Wundt y Titchener de descomponer la conciencia en elementos. Su postulado central es que la experiencia se da en totalidades organizadas (el todo es más que la suma de las partes)."
+    },
+    {
+        module: 4,
+        question: "La psicología de la Gestalt plantea:",
+        options: [
+            "estudios sobre el pensamiento de los chimpancés basados en la resolución de problemas",
+            "críticas al conductismo y destaca la importancia de realizar análisis globales",
+            "critica el método de la introspección, utilizado por la psicología experimental",
+            "todas son correctas"
+        ],
+        answer: "todas son correctas",
+        justification: "La Gestalt realizó aportes en múltiples frentes: estudió el pensamiento y la resolución de problemas (Köhler), criticó al conductismo por su enfoque E-R y al estructuralismo por su método introspectivo y su atomismo."
+    },
+    {
+        module: 4,
+        question: "Son antecedentes del conductismo:",
+        options: [
+            "Los estudios acerca de los reflejos reactivos realizados por Romanes",
+            "La psicología experimental y el método científico de la introspección",
+            "Los estudios acerca de la inteligencia animal desarrollados por Kohler",
+            "Las leyes de aprendizaje expuestas por Thorndike"
+        ],
+        answer: "Las leyes de aprendizaje expuestas por Thorndike",
+        justification: "La 'Ley del Efecto' de Thorndike, que establece que las conductas seguidas de consecuencias satisfactorias tienden a repetirse, es un antecedente directo del concepto de refuerzo en el conductismo."
+    },
+    {
+        module: 4,
+        question: "Sobre el conductismo:",
+        options: [
+            "En el comienzo de la teoría se propone el estudio de los fenómenos de conciencia.",
+            "Uno de los antecedentes del conductismo fue el modelo de psiquismo inconsciente freudiano.",
+            "La psicología animal fue uno de los pilares sobre el que se asentó el conductismo.",
+            "Las conductas que tienen mejores consecuencias tenderán a reproducirse en el corto plazo, pero no en el futuro."
+        ],
+        answer: "La psicología animal fue uno de los pilares sobre el que se asentó el conductismo.",
+        justification: "El conductismo se apoyó fuertemente en la psicología comparada y la experimentación con animales (Pavlov, Thorndike) bajo la premisa darwiniana de la continuidad entre especies."
+    },
+    {
+        module: 4,
+        question: "Desde la psicología humanista se entiende que el sujeto:",
+        options: [
+            "Logra un mayor estado de bienestar cuando se encuentra autorrealizándose.",
+            "Está determinado únicamente por su ambiente.",
+            "Puede desarrollar sus potencialidades a través del descubrimiento del inconsciente.",
+            "Posee conductas que pueden ser cambiadas a través del condicionamiento operante."
+        ],
+        answer: "Logra un mayor estado de bienestar cuando se encuentra autorrealizándose.",
+        justification: "La psicología humanista, especialmente Maslow, postula la autorrealización como la necesidad humana más elevada, representando el impulso a desarrollar plenamente el propio potencial."
+    },
+    {
+        module: 4,
+        question: "En los postulados de la Psicología Humanista:",
+        options: [
+            "Pretende la consideración global de la persona y la acentuación en sus aspectos existenciales.",
+            "El principal énfasis no es el rigor experimental sino por acercarse a los problemas reales de las personas.",
+            "Se renuncia a una epistemología científica como la que llevaba el conductismo.",
+            "Todas son correctas."
+        ],
+        answer: "Todas son correctas.",
+        justification: "La psicología humanista se caracteriza por su visión holística, su enfoque en la experiencia subjetiva y los problemas humanos reales, y su rechazo al determinismo y al rigor experimental del conductismo."
+    },
+    {
+        module: 4,
+        question: "En el campo de la salud mental:",
+        options: [
+            "se entiende por salud, los aspectos biológicos del sujeto, los cuales son atendidos por el equipo interdisciplinario",
+            "se entiende por salud, la ausencia de enfermedades psicofísicas",
+            "se concibe a la salud como integral, tomando los determinantes sociales, económicos, de vigilancia control epidemiológico, la promoción y la prevención entre otros",
+            "la salud mental incluye solo los aspectos psicológicos del sujeto"
+        ],
+        answer: "se concibe a la salud como integral, tomando los determinantes sociales, económicos, de vigilancia control epidemiológico, la promoción y la prevención entre otros",
+        justification: "El modelo actual de salud mental, alineado con la OMS, es biopsicosocial. Supera la visión de 'ausencia de enfermedad' para incluir el bienestar y los múltiples determinantes sociales y económicos de la salud."
+    },
+    {
+        module: 4,
+        question: "La psicología del trabajo y de las organizaciones:",
+        options: [
+            "surge a comienzos del siglo XIX con los desarrollos de la Sociología",
+            "Atiende solo los problemas de la productividad de los trabajadores",
+            "promueve la mejora de los salarios y las condiciones de vida de los trabajadores",
+            "se ocupa de la salud laboral, promoviendo el mayor grado de bienestar físico, mental y social de los trabajadores."
+        ],
+        answer: "se ocupa de la salud laboral, promoviendo el mayor grado de bienestar físico, mental y social de los trabajadores.",
+        justification: "Este ámbito de la psicología aplicada se enfoca en la interacción entre la persona y su entorno laboral, buscando optimizar tanto el bienestar y la salud del trabajador como la eficacia de la organización."
+    },
+    {
+        module: 4,
+        question: "En el campo de trabajo de la discapacidad, entendemos que:",
+        options: [
+            "La discapacidad es causada inicialmente por una enfermedad neurológica",
+            "La discapacidad se produce a partir de una relación negativa de la condición de salud de la persona y el contexto",
+            "La discapacidad está relacionada con la incapacidad de vincularse con el entorno familiar",
+            "La discapacidad es responsabilidad de la persona debido a su negatividad a vincularse"
+        ],
+        answer: "La discapacidad se produce a partir de una relación negativa de la condición de salud de la persona y el contexto",
+        justification: "Este es el núcleo del modelo social de la discapacidad (adoptado por la OMS y la ONU), que entiende la discapacidad no como un atributo de la persona, sino como el resultado de la interacción con un entorno que presenta barreras."
+    },
+    {
+        module: 4,
+        question: "Según Conde (2003) los/as psicólogos/as en la Educación:",
+        options: [
+            "Trabajan desde un marco teórico psicoanalítico y humanista.",
+            "Utilizan diversas técnicas tales como entrevista, taller, observación entre otras.",
+            "Intervienen en sus prácticas desde un nivel de asistencia.",
+            "Todas son correctas."
+        ],
+        answer: "Utilizan diversas técnicas tales como entrevista, taller, observación entre otras.",
+        justification: "El rol del psicólogo educacional es multifacético e implica el uso de diversas herramientas para analizar e intervenir en los procesos de enseñanza-aprendizaje, la dinámica institucional y los aspectos vinculares."
+    },
+    {
+        module: 4,
+        question: "La psicología del Deporte y la Actividad Física como ámbito:",
+        options: [
+            "Es una rama de la psicología en la que trata de relacionar los espacios vinculares, grupales e intrapsíquicos.",
+            "Interviene en los deportes para lograr el éxito deportivo a través de los factores intrapsíquicos.",
+            "Se dedica exclusivamente a los aspectos emocionales de los deportistas de alto rendimiento.",
+            "Trabaja la incidencia de lo mental, en la iniciación deportiva, la salud y el rendimiento deportivo."
+        ],
+        answer: "Trabaja la incidencia de lo mental, en la iniciación deportiva, la salud y el rendimiento deportivo.",
+        justification: "Este ámbito abarca un amplio espectro, desde el fomento de la actividad física saludable en la población general hasta la optimización del rendimiento en deportistas, trabajando sobre factores como la motivación, concentración y manejo de la presión."
+    },
+    {
+        module: 4,
+        question: "El censo nacional de psicólogos de 2014 evidenció que:",
+        options: [
+            "El número de egresadas/os se distribuye en forma homogénea en todo el territorio nacional.",
+            "Los principales ámbitos de trabajo son: psicoanálisis, clínica grupal y Laboral.",
+            "Es superior el número de egresados que de egresadas",
+            "La inserción en el Sistema Nacional Integrado de Salud es insuficiente"
+        ],
+        answer: "La inserción en el Sistema Nacional Integrado de Salud es insuficiente",
+        justification: "Giménez analiza los datos del censo y concluye que, a pesar del alto número de profesionales, su inserción en el sistema público de salud es aún débil, lo que genera barreras de acceso para la población."
+    },
+    {
+        module: 4,
+        question: "Vygotsky, representante de la psicología cognitiva considera que:",
+        options: [
+            "El pensamiento y lenguaje surgen del intercambio de los niños con adultos y otros niños.",
+            "El lenguaje se construye en estadios definidos de acuerdo al proceso madurativo.",
+            "El lenguaje es independiente del pensamiento y no es una condición para el mismo.",
+            "El lenguaje al igual que los reflejos son producto de una capacidad innata."
+        ],
+        answer: "El pensamiento y lenguaje surgen del intercambio de los niños con adultos y otros niños.",
+        justification: "Para Vygotsky, las funciones psicológicas superiores, como el pensamiento y el lenguaje, tienen un origen social. Se desarrollan primero en el plano interpersonal (interacción) y luego se internalizan."
+    },
+    {
+        module: 4,
+        question: "Para Piaget:",
+        options: [
+            "la asimilación es un proceso donde el niño absorbe la realidad exterior adaptándola a las estructuras del organismo.",
+            "para que se produzca el conocimiento lógico racional sólo es necesario el lenguaje.",
+            "en la asimilación el propio organismo se adapta a la demandas externas.",
+            "el conflicto cognitivo es fundamental para lograr el aprendizaje."
+        ],
+        answer: "la asimilación es un proceso donde el niño absorbe la realidad exterior adaptándola a las estructuras del organismo.",
+        justification: "En la teoría de Piaget, la asimilación es el proceso por el cual el sujeto integra nueva información a sus esquemas cognitivos existentes, sin modificarlos. Es el proceso complementario a la acomodación."
+    },
+    {
+        module: 4,
+        question: "La teoría cognitiva considera:",
+        options: [
+            "Que los procesos mentales son paralelos y consecuencia de los aprendizajes conductuales realizados.",
+            "Que el cerebro es explicado en términos de funcionamiento serial",
+            "Que los procesos mentales no son relevantes como objeto de estudio",
+            "Que el cerebro es una unidad de cálculo formado por unidades simples interconectadas"
+        ],
+        answer: "Que el cerebro es una unidad de cálculo formado por unidades simples interconectadas",
+        justification: "Influenciada por la metáfora del ordenador, la psicología cognitiva temprana (conexionismo) modeló el cerebro como un sistema de procesamiento de información compuesto por unidades simples (neuronas) interconectadas que operan en paralelo."
+    }
+];
 
-            // MÓDULO 3: Pluralidad psicológica (siglo XIX)
-            { module: 3, question: "¿A quién se le atribuye la fundación del primer laboratorio oficial de psicología experimental en Leipzig (1879)?", answer: "Wilhelm Wundt." },
-            { module: 3, question: "¿Se considera a W. Wundt como el fundador de la psicología científica por sus investigaciones en laboratorio, quien se dedicó a:", answer: "El estudio riguroso acerca de la percepción de las propiedades físicas de los objetos sin mediación mental alguna." },
-            { module: 3, question: "¿Wundt define la psicología como:", answer: "La ciencia de la experiencia inmediata, de los hechos de la conciencia, sus relaciones y combinaciones y las leyes que la rigen." },
-            { module: 3, question: "¿Cuál era el objeto de estudio principal para Wundt en su psicología experimental?", answer: "La experiencia inmediata (la conciencia)." },
-            { module: 3, question: "¿Qué método utilizó principalmente Wundt para estudiar la conciencia?", answer: "La introspección experimental." },
-            { module: 3, question: "¿La introspección se basa en:", answer: "La observación controlada de los contenidos de conciencia realizada bajo condiciones experimentales." },
-            { module: 3, question: "¿El método introspectivo de la psicología experimental se basa en:", answer: "La observación controlada de los contenidos de conciencia realizada bajo condiciones experimentales." },
-            { module: 3, question: "¿El método de la psicología experimental:", answer: "Era una técnica de percepción interna controlada de los contenidos de la conciencia realizada bajo condiciones experimentales." },
-            { module: 3, question: "¿La psicología experimental desarrolló como método de investigación:", answer: "La introspección en condiciones experimentales." },
-            { module: 3, question: "¿La psicología experimental que desarrolló Wilhelm Wundt:", answer: "Se basa en la experiencia que el sujeto recibe directamente del mundo exterior sin mediación de elaboración mental." },
-            { module: 3, question: "¿Para Wundt:", answer: "La voluntad organiza los contenidos mentales en estructuras de nivel superior, de forma que las imágenes de la percepción se reorganizan en procesos superiores cognitivos." },
-            { module: 3, question: "¿Los aportes de Wundt en su psicología experimental fueron conocer:", answer: "La experiencia inmediata, teniendo en cuenta las sensaciones." },
-            { module: 3, question: "¿La fundación del Laboratorio de Wundt en 1879 en Alemania:", answer: "Es un hecho histórico que algunos estudiosos señalan como el comienzo de la Psicología Científica (aunque había otros laboratorios antes, este fue exclusivo para psicología)." },
-            { module: 3, question: "¿Qué disciplina, según Boring, sirvió de base para el surgimiento de la psicología experimental en Alemania, enfocándose en la fisiología de los sentidos?", answer: "La Fenomenología (en su sentido descriptivo y clasificatorio temprano)." },
-            { module: 3, question: "¿Son antecedentes de la psicología experimental, según Boring:", answer: "La fenomenología que permite la recolección de hechos observables, detallados, conscientes y meticulosos." },
-            { module: 3, question: "¿Qué ley psicofísica, formulada por Weber y Fechner, establece una relación matemática entre la intensidad de un estímulo y la sensación percibida?", answer: "La Ley de Weber-Fechner." },
-            { module: 3, question: "¿Weber cuyos aportes se toman como antecedentes de la psicología experimental:", answer: "Descubrió que la experiencia subjetiva podía examinarse experimentalmente y describirse en números." },
-            { module: 3, question: "¿Weber y Fechner representantes de la Psicología experimental del siglo XIX:", answer: "Establecieron un umbral diferencial mínimo de las sensaciones que percibimos." },
-            { module: 3, question: "¿Se consideran antecedentes de la Psicología experimental a:", answer: "Los estudios del sistema del tacto y la actividad muscular desarrollados por Weber; los estudios de Fechner sobre la relación mundo físico-mente; la fisiología óptica y auditiva de Von Helmholtz." },
-            { module: 3, question: "¿La psicología científica del siglo XIX:", answer: "Fue una ciencia que se basó en los estudios de laboratorio y la experimentación." },
-            { module: 3, question: "¿La Psicología científica del siglo XIX:", answer: "La Psicología necesitaba definir un objeto de estudio y un método para obtener el status de las ciencias naturales." },
-            { module: 3, question: "¿Se consideró científica a la Psicología experimental del siglo XIX porque:", answer: "La Psicología cumplía los requerimientos de las ciencias biológicas y de laboratorio." },
-            { module: 3, question: "¿Por qué se consideró científica a la Psicología experimental del siglo XIX?", answer: "Porque mantuvo el método de las ciencias naturales y cumplía los requerimientos de las ciencias de laboratorio." },
-            { module: 3, question: "¿La psicología se consideró científica cuando:", answer: "Incorpora el método de investigación, que toma en cuenta los aportes del positivismo y los avances de las ciencias naturales." },
-            { module: 3, question: "¿La separación entre la Filosofía y la Psicología se produce:", answer: "Cuando surge el modelo científico de las ciencias naturales." },
-            { module: 3, question: "¿La psicología experimental tomó como antecedentes:", answer: "El desarrollo de las ciencias biológicas y las ciencias médicas." },
-            { module: 3, question: "¿Acerca del contexto de surgimiento de la Psicología Experimental:", answer: "La ciencia de la época definía el objeto de estudio como aquel al que podía aplicarse el método experimental." },
-            { module: 3, question: "¿El contexto de surgimiento de la psicología experimental se caracteriza por:", answer: "La consolidación del capitalismo, la hegemonía del positivismo y la consagración de técnicas de medición y formulación de leyes naturales." },
-            { module: 3, question: "¿Qué escuela psicológica, liderada por Titchener en EEUU, se centró en analizar la estructura de la conciencia descomponiéndola en sus elementos básicos (sensaciones, imágenes, afectos)?", answer: "Estructuralismo." },
-            { module: 3, question: "¿El estructuralismo en psicología:", answer: "Propone el estudio de la mente a través de las manifestaciones de la conciencia." },
-            { module: 3, question: "¿El estructuralismo de Titchener propone:", answer: "El estudio de la mente general del adulto." },
-            { module: 3, question: "¿Para el estructuralismo la conciencia es:", answer: "La suma total de los procesos mentales que ocurren en cualquier momento." },
-            { module: 3, question: "¿E.Titchener como representante del estructuralismo consideró que los elementos de la conciencia son:", answer: "Sensaciones como elementos de la percepción, imágenes como elementos de las ideas y afectos como elementos de las emociones." },
-            { module: 3, question: "¿Para el estructuralismo:", answer: "La conciencia está compuesta por las sensaciones, imágenes y afectos." },
-            { module: 3, question: "¿Titchener establece sobre la conciencia:", answer: "Que los elementos que la componen son las sensaciones, las imágenes y los afectos." },
-            { module: 3, question: "¿El estructuralismo en EEUU:", answer: "No tuvo gran interés y fue desplazado por el funcionalismo que consideraba la intencionalidad de la mente." },
-            { module: 3, question: "¿El Funcionalismo, en contraposición al Estructuralismo, se interesaba principalmente por:", answer: "La función adaptativa de la mente y la conciencia (para qué sirve)." },
-            { module: 3, question: "¿El funcionalismo:", answer: "Se centró en las posibles aplicaciones prácticas de sus investigaciones." },
-            { module: 3, question: "¿El funcionalismo que se desarrolló en EEUU:", answer: "Realizó una crítica a la introspección y consideró a la conciencia como un flujo continuo y no estático." },
-            { module: 3, question: "¿Para el funcionalismo, cuyo antecesor fue William James:", answer: "Consideró que lo importante es la intencionalidad de la mente dirigida a un fin." },
-            { module: 3, question: "¿W. James, postula:", answer: "Que la conciencia no puede descomponerse en unidades más simples." },
-            { module: 3, question: "¿William James, precursor del funcionalismo propone:", answer: "Entiende las propiedades de la conciencia como un flujo continuo que no puede descomponerse en unidades más simples; que una proposición es verdadera cuando resulta útil creer que lo es." },
-            { module: 3, question: "¿El funcionalismo:", answer: "Todas son correctas (Se relaciona con el Darwinismo Social, Fue introducido por Spencer en Estados Unidos, Surgió como una versión filosófica y social de la teoría de la selección natural)." },
-            { module: 3, question: "¿El Funcionalismo norteamericano se sustenta en los siguientes referentes teóricos:", answer: "Postula que los conceptos mentales derivan del pragmatismo y el asociacionismo evolucionista." },
-            { module: 3, question: "¿Hermann Ebbinghaus es conocido por extender el método experimental al estudio de:", answer: "La memoria y el olvido." },
-            { module: 3, question: "¿Qué importante teoría biológica del siglo XIX influyó decisivamente en el Funcionalismo y en el posterior desarrollo de la psicología comparada y el conductismo?", answer: "La teoría de la evolución por selección natural de Darwin." },
-            { module: 3, question: "¿La teoría de la evolución de las especies de Darwin tuvo influencia en:", answer: "La formulación del conductismo y la idea de adaptación de conductas." },
-            { module: 3, question: "¿Qué escuela estudió el \"pensamiento sin imágenes\", oponiéndose a Wundt y a la tradición empirista?", answer: "La escuela de Wurzburgo (Oswald Külpe)." },
-            { module: 3, question: "¿La medida de las capacidades mentales, particularmente la inteligencia supuso:", answer: "Una ampliación del ámbito de aplicación de la psicología, por ejemplo, a la educación." },
-            { module: 3, question: "¿Qué psicólogo es considerado pionero de la psicometría y promotor de la eugenesia?", answer: "Sir Francis Galton." },
-            { module: 3, question: "¿Qué concepto introdujo Alfred Binet para evaluar el desarrollo intelectual de los niños en sus tests?", answer: "Nivel mental (o edad mental)." },
-            { module: 3, question: "¿Qué indicador numérico para expresar el nivel de inteligencia fue popularizado por Lewis Terman con la escala Stanford-Binet?", answer: "El Cociente Intelectual (CI)." },
-            { module: 3, question: "¿Cuál es la principal crítica que se le hace a la Psicología Experimental según el resumen de 2023?", answer: "Que considera al hombre como un sujeto pasivo que reacciona ante estímulos (pierde visión integral, no considera particularidades)." },
-            { module: 3, question: "¿La psicología en Latinoamérica en la primera mitad del siglo XX reconoce como hitos destacados:", answer: "Todas son correctas (Aportes de Clemente Estable, Contribuciones de Ángel Garma, Laboratorios de Horacio Piñero)." },
-            { module: 3, question: "¿La Psicología latinoamericana de primera mitad del siglo XX se caracterizó por:", answer: "Una Psicología aplicada de utilidad y su relación con otras disciplinas afines." },
-            { module: 3, question: "¿Klappenbach y Pavesi destacan la emergencia del psicólogo como nueva figura profesional en Latinoamérica a partir de los años 50 y 60 destacando que:", answer: "Se le dio énfasis a la psicología aplicada." },
-            { module: 3, question: "¿Temas relevantes que trataba la Psicología a comienzos del siglo XX en América del Sur:", answer: "Demandas clínicas de la medicina y la educación." },
-
-            // MÓDULO 4: Ámbitos de la psicología
-            { module: 4, question: "¿Qué escuela psicológica criticó el enfoque atomista y promovió la percepción de totalidades organizadas (Gestalten)?", answer: "La Psicología de la Gestalt." },
-            { module: 4, question: "¿La Psicología de la Gestalt:", answer: "Comienza en el primer tercio del siglo XX, con Wertheimer, Koffka y Kohler, centrándose particularmente en el ámbito de la percepción." },
-            { module: 4, question: "¿La Psicología de la Gestalt plantea que:", answer: "La experiencia no se presenta como componentes elementales y sin sentido, sino integrada en totalidades, estructurada significativamente." },
-            { module: 4, question: "¿Desde la psicología de la Gestalt se plantea:", answer: "La noción de un todo cuyas partes se relacionan dinámicamente entre sí y con la totalidad a la que pertenecen; una totalidad integrada en la que cada parte tiene el lugar y la función que le vienen exigidas por la naturaleza misma del conjunto." },
-            { module: 4, question: "¿Qué concepto introdujo Kohler para describir la resolución súbita de problemas por una reestructuración de la percepción de la situación?", answer: "Insight o invisión." },
-            { module: 4, question: "¿A qué se refiere la Ley de Cierre de la Gestalt?", answer: "A la tendencia a percibir formas completas cerrando contornos e ignorando espacios vacíos." },
-            { module: 4, question: "¿Sobre las definiciones de las leyes de la Gestalt:", answer: "Ley de la Pregnancia: se organizan los estímulos en figuras regulares, simétricas, simples y estables." },
-            { module: 4, question: "¿W. Köhler, aporta a la Psicología Gestáltica el concepto de fijación funcional:", answer: "Que consiste en que tendemos a pensar en que los objetos sólo tienen utilidad para lo cual fueron creados y encontramos dificultades para que tengan otros fines." },
-            { module: 4, question: "¿Qué figura histórica, según Canguilhem, funda la medicina mental como disciplina independiente al aislar terapéuticamente a los alienados?", answer: "Pinel." },
-            { module: 4, question: "¿Qué método desarrolló Freud para acceder al inconsciente, reemplazando progresivamente a la hipnosis?", answer: "La asociación libre y la interpretación de los sueños." },
-            { module: 4, question: "¿En el psicoanálisis:", answer: "Freud comienza estudiando los casos de histeria a los cuales los médicos no hallaban causas orgánicas." },
-            { module: 4, question: "¿Acerca de los primeros estudios que realiza Freud a fines del siglo XIX:", answer: "Su estancia en París estudiando con Charcot, será de gran influencia para el desarrollo de su teoría." },
-            { module: 4, question: "¿Para la teoría psicoanalítica:", answer: "Freud va a Francia y estudia con Jean Charcot, se interesa por la histeria y sus tratamientos y se preocupa por \"la cura del espíritu enfermo\"." },
-            { module: 4, question: "¿En su primera conferencia del año 1910, Freud explica la doble conciencia como:", answer: "Por un lado un estado anímico consciente y por el otro uno inconsciente." },
-            { module: 4, question: "¿En la Teoría Psicoanalítica:", answer: "El Neoromanticismo tiene gran incidencia por la importancia de lo onírico y el trabajo de tres grandes pioneros de la investigación de los sueños: Schemer, Maury y Hervey de Saint-Denis." },
-            { module: 4, question: "¿Antecedentes de la teoría psicoanalítica:", answer: "Los trabajos sobre hipnosis desarrollados por Bernheim y Charcot en Francia." },
-            { module: 4, question: "¿Se consideran influencias directas en el desarrollo del Psicoanálisis:", answer: "Los aportes de la Psiquiatría dinámica y el \"magnetismo animal\" postulado por Mesmer." },
-            { module: 4, question: "¿Se consideran antecedentes del Psicoanálisis:", answer: "Las corrientes neorománticas que manifestaban un interés por lo oculto." },
-            { module: 4, question: "¿El psicoanálisis tuvo influencias de algunos filósofos:", answer: "Arthur Schopenhauer con la idea del hombre como un ser irracional guiado por fuerzas internas desconocidas." },
-            { module: 4, question: "¿Schopenhauer, postuló como aporte al desarrollo de la teoría psicoanalítica:", answer: "El hombre es un ser irracional guiado por fuerzas internas desconocidas por él." },
-            { module: 4, question: "¿La psiquiatría dinámica:", answer: "Contribuyó al desarrollo de la idea del aparato psíquico freudiano." },
-            { module: 4, question: "¿Según Ellenberger la psiquiatría dinámica surge relacionada con:", answer: "El enfrentamiento entre Mesmer y Gassner." },
-            { module: 4, question: "¿El Conductismo, fundado por J.B. Watson, propuso que el objeto de estudio de la psicología debía ser:", answer: "La conducta observable y medible." },
-            { module: 4, question: "¿Para el conductismo:", answer: "La Psicología debe ser objetiva y experimental." },
-            { module: 4, question: "¿John Watson (1878-1958):", answer: "Sostenía que la conducta de los animales es real, objetiva y práctica; su proyecto conductista integra a la Psicología a las ciencias Naturales; define al objeto de estudio determinado por el método." },
-            { module: 4, question: "¿Watson explicó el aprendizaje y gran parte del comportamiento humano basándose en:", answer: "El condicionamiento (asociación estímulo-respuesta)." },
-            { module: 4, question: "¿J.B. Watson, fundador del conductismo trabajó con:", answer: "Condicionamientos con animales en estudios de \"psicofísica animal\"." },
-            { module: 4, question: "¿Son antecedentes del conductismo:", answer: "Las leyes de aprendizaje expuestas por Thorndike." },
-            { module: 4, question: "¿Se consideran antecedentes del conductismo:", answer: "Los estudios con gatos de Thorndike y el aprendizaje por ensayo y error." },
-            { module: 4, question: "¿Se consideran antecedentes que influyeron en el conductismo:", answer: "La teoría de la evolución de las especies que conceptualiza los individuos como parte de la cadena evolutiva." },
-            { module: 4, question: "¿Iván Pavlov, aporta al desarrollo del conductismo:", answer: "Los procesos de extinción experimental; los conceptos de discriminación y generalización; sus estudios sobre el condicionamiento." },
-            { module: 4, question: "¿Sobre el conductismo:", answer: "Surge como respuesta a las dudas que surgían del método introspectivo; define la conducta como una cuestión de reflejos condicionados aprendidos." },
-            { module: 4, question: "¿La teoría conductista fue influida por:", answer: "El darwinismo y el funcionalismo." },
-            { module: 4, question: "¿La Psicología Cognitiva, que resurgió con fuerza a mediados del siglo XX, se centra en el estudio de:", answer: "Los procesos mentales (atención, memoria, lenguaje, pensamiento, resolución de problemas)." },
-            { module: 4, question: "¿La teoría cognitiva considera:", answer: "Que el cerebro es una unidad de cálculo formado por unidades simples interconectadas." },
-            { module: 4, question: "¿La Psicología cognitiva:", answer: "Asume que hay mecanismos mentales que no son accesibles a la conciencia." },
-            { module: 4, question: "¿Qué metáfora fue fundamental en los inicios de la psicología cognitiva para entender el funcionamiento de la mente?", answer: "La mente como un ordenador (procesador de información)." },
-            { module: 4, question: "¿Jean Piaget es conocido por su teoría del desarrollo cognitivo en niños, que describe etapas y procesos como:", answer: "Asimilación y acomodación para lograr el equilibrio cognitivo." },
-            { module: 4, question: "¿Para Piaget:", answer: "La asimilación es un proceso donde el niño absorbe la realidad exterior adaptándola a las estructuras del organismo." },
-            { module: 4, question: "¿Piaget aporta a la psicología cognitiva que:", answer: "Para que se produzca el conocimiento lógico racional no es necesario el lenguaje (implícito en su enfoque en la acción y esquemas)." },
-            { module: 4, question: "¿Lev Vygotsky, representante de la psicología soviética, enfatizó la importancia de _______ en el desarrollo cognitivo.", answer: "La interacción social y el lenguaje." },
-            { module: 4, question: "¿Vigotsky exponente de la psicología cognitiva considera:", answer: "Que el comportamiento social conforma la conciencia." },
-            { module: 4, question: "¿Vygotsky, representante de la psicología cognitiva considera que:", answer: "El pensamiento y lenguaje surgen del intercambio de los niños con adultos y otros niños." },
-            { module: 4, question: "¿Qué concepto de Vygotsky refiere a la distancia entre lo que un niño puede hacer solo y lo que puede hacer con ayuda de un adulto u otro par más capaz?", answer: "Zona de Desarrollo Próximo (ZDP)." },
-            { module: 4, question: "¿La Psicología Humanista (Maslow, Rogers, Allport) surgió como una \"tercera fuerza\" en reacción al determinismo del psicoanálisis y el conductismo, enfatizando:", answer: "El potencial humano, la autorrealización, la libertad y la experiencia subjetiva." },
-            { module: 4, question: "¿La Psicología Humanista:", answer: "Propone como objeto de estudio la experiencia consciente." },
-            { module: 4, question: "¿La Psicología Humanista:", answer: "Considera que debe tener un enfoque centrado en el ser humano individual." },
-            { module: 4, question: "¿La psicología humanista plantea:", answer: "El estudio de la experiencia consciente del hombre." },
-            { module: 4, question: "¿La psicología humanista concibe al hombre:", answer: "Como un ser holístico, con voluntad y capacidad de cambio." },
-            { module: 4, question: "¿Desde la psicología humanista se entiende que el sujeto:", answer: "Logra un mayor estado de bienestar cuando se encuentra autorrealizándose." },
-            { module: 4, question: "¿En los postulados de la Psicología Humanista:", answer: "Todas son correctas (Pretende consideración global y aspectos existenciales; énfasis no es rigor experimental sino problemas reales; renuncia a epistemología científica conductista)." },
-            { module: 4, question: "¿Según Maslow, la necesidad más elevada en su jerarquía, que representa el impulso de desarrollar todo el potencial propio, es:", answer: "La necesidad de autorrealización." },
-            { module: 4, question: "¿Entre los principales aportes de Maslow a la Psicología Humanista se destaca:", answer: "La elaboración de la pirámide de las necesidades humanas; la autorrealización como logro superior de satisfacción de las necesidades." },
-            { module: 4, question: "¿Qué enfoque terapéutico desarrolló Carl Rogers, basado en la confianza en la capacidad del cliente para dirigirse hacia su propia curación?", answer: "Terapia centrada en el cliente." },
-            { module: 4, question: "¿Qué distinción hace Arana et al. fundamental en el ámbito académico y profesional de la psicología?", answer: "Psicología básica (investigación) y psicología aplicada (intervención)." },
-            { module: 4, question: "¿En el campo de la salud mental:", answer: "Se concibe la salud como integral, tomando los determinantes sociales, económicos, de vigilancia control epidemiológico, la promoción y la prevención entre otros." },
-            { module: 4, question: "¿En el campo de la salud mental:", answer: "Los ámbitos en los que se desarrolla son: sanitario y psicosocial (según el contexto de la clase/material específico, podría variar; el resumen menciona más diversidad)." },
-            { module: 4, question: "¿Los psicólogos en el campo de la salud mental:", answer: "Aportan desde la mirada psicológica en la construcción de saberes interdisciplinarios." },
-            { module: 4, question: "¿La psicología del trabajo y de las organizaciones:", answer: "Se ocupa de la salud laboral, promoviendo el mayor grado de bienestar físico, mental y social de los trabajadores." },
-            { module: 4, question: "¿La salud laboral de acuerdo a la OMS es:", answer: "Promoción y mantenimiento del mayor grado de bienestar físico, mental y social de los trabajadores en todas las ocupaciones, mediante la prevención de las desviaciones de la salud, control de riesgos y la adaptación del trabajo a la gente, y la gente a sus puestos de trabajo." },
-            { module: 4, question: "¿En el campo de trabajo de la discapacidad, entendemos que:", answer: "La discapacidad se produce a partir de una relación negativa de la condición de salud de la persona y el contexto." },
-            { module: 4, question: "¿En el campo de la discapacidad se interviene:", answer: "Todas son verdaderas (Interacción en ámbitos educativos, trabajo, salud, ocio; diseñando apoyos para accesibilidad; con la persona y su familia/entorno)." },
-            { module: 4, question: "¿La Psicología cuando interviene en el campo de la Discapacidad lo hace:", answer: "Diseñando apoyos para la accesibilidad; con la persona en situación de discapacidad y su familia y/o entorno más próximo; en la interacción con ámbitos educativos, trabajo, salud y actividades culturales de ocio y tiempo libre." },
-            { module: 4, question: "¿La psicología en el ámbito de las Políticas Sociales:", answer: "Interviene sobre procesos sociales complejos y cambiantes." },
-            { module: 4, question: "¿Los aportes de la Psicología en el ámbito de las Políticas Sociales, hace referencia a:", answer: "El ejercicio de la Psicología con personas en diversos contextos sociales, asegurando el cumplimiento de derechos (salud, educación, seguridad social)." },
-            { module: 4, question: "¿Según Conde (2003) los/as psicólogos/as en la Educación:", answer: "Utilizan diversas técnicas tales como entrevista, taller, observación entre otras." },
-            { module: 4, question: "¿Psicólogos y Psicólogas en la educación:", answer: "Aportan al trabajo colaborativo, analizan las demandas, pedidos y encargos, considerando las diferentes particularidades de cada momento del desarrollo." },
-            { module: 4, question: "¿En la Psicología del deporte y la actividad física se plantea:", answer: "Es importante tener en cuenta el tipo de deporte que se realiza, el contexto y los aspectos motivacionales en relación al deportista." },
-            { module: 4, question: "¿La psicología del Deporte y la Actividad Física como ámbito:", answer: "Trabaja la incidencia de lo mental, en la iniciación deportiva, la salud y el rendimiento deportivo." },
-            { module: 4, question: "¿Con relación a la inserción laboral de los psicólogos Giménez afirma que:", answer: "Se da en la educación, lo social y la clínica." },
-            { module: 4, question: "¿El censo nacional de psicólogos de 2014 evidenció que:", answer: "La inserción en el Sistema Nacional Integrado de Salud es insuficiente." },
-            { module: 4, question: "¿Según Giménez, el Plan de Prestaciones en Salud Mental:", answer: "Busca asegurar el acceso universal y equitativo a prestaciones en psicoterapia y abordajes psicosociales." },
-            { module: 4, question: "¿De acuerdo a Giménez el modelo de salud del SNIS (2011) enfatiza:", answer: "La promoción y el primer nivel de atención, en articulación con los otros niveles de intervención." },
-            { module: 4, question: "¿En el ámbito del sistema nacional integrado de salud (2011), tiene como principios rectores:", answer: "La promoción de la salud con énfasis en los factores determinantes del entorno y los estilos de vida de la población." },
-            { module: 4, question: "¿Qué tipo de condicionamiento estudió principalmente Skinner, donde la conducta es modificada por sus consecuencias (refuerzos)?", answer: "Condicionamiento operante." },
-        ];
 
 
         // --- Variables Globales ---
